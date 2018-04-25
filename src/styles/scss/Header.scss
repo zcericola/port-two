@@ -1,0 +1,17 @@
+#header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5em;
+    font-family: $body;
+    color: $main-white;
+
+}
+
+
+.btn {
+    border: 3px solid $main-white;
+    padding: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;   
+
+}

@@ -1,0 +1,28 @@
+//Variables
+$heading: 'Playfair Display', serif;
+$body: 'Open Sans', sans-serif;
+$main-white: #fdfdfd;
+$shadow: rgba(109, 109, 109, 0.502);
+$pink: #F1CFC8;
+$dk-blue: #216578;
+$alt-blue: #078CA1;
+$lt-blue: #7797A2;
+$lt-brown: #A28642;
+$dk-brown: #68562A;
+
+#app {
+  text-align: center;  
+}
+
+.container {
+  color: $dk-blue;
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: $main-white;
+}
+

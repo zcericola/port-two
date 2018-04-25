@@ -1,0 +1,43 @@
+#splash {
+    background: linear-gradient(to bottom, rgba(0,0,0,.4) 0%,rgba(0,0,0,0) 100%),url('../../assets/splash.jpg'); 
+    -webkit-clip-path: circle(90.7% at 50% 5%);
+clip-path: circle(95.7% at 50% 5%);
+    background-size: cover;
+    background-repeat: no-repeat;   
+    height: 100vh;
+    color: $main-white;
+    
+}
+
+#hero-container {
+    font-size: 1.8em;
+}
+
+
+//MEDIA QUERIES 
+@media screen and (min-width: 400px){
+    #hero-container {
+    font-size: 2em;
+    }
+}
+
+@media screen and (min-width: 630px){
+    #splash {
+        clip-path: none;
+        
+    }
+}
+
+@media screen and (min-width: 768px){
+    #hero-container {
+        font-size: 2.2em;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px){
+    #hero-container {
+        font-size: 2.5em;
+    }
+}
