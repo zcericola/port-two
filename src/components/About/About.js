@@ -7,7 +7,7 @@ class About extends Component {
         <div className = 'cards'>
         <div className = 'card'>        
         <i className="fas fa-map-marker"></i>
-        <h3>Currently in Dallas, TX</h3>
+        <h3>Currently in Dallas, TX</h3> 
         </div>
 
         <div className = 'card'>        

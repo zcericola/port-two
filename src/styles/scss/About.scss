@@ -62,9 +62,9 @@
     }
 }
 
-@media screen and (min-width: 768px){
-    .cards {
-        flex-direction: row;
+@media screen and (min-width: 896px){
+    .card {
+        width: 260px;
     }
 
    

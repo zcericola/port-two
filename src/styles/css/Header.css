@@ -1,19 +1,18 @@
 /*
-Error: Undefined variable: "$body".
-        on line 4 of src/styles/scss/Header.scss
+Error: Undefined variable: "$main-white".
+        on line 3 of src/styles/scss/Header.scss
 
-1: #header {
-2: 
-3:     padding: 1.5em;
-4:     font-family: $body;
-5:     color: $main-white;
-6: 
-7: }
-8: 
-9: 
+1: #header {    
+2:     padding: 1em;
+3:     color: $main-white;
+4:     height: 10vh;
+5:     display: flex;
+6:     flex-direction: row;
+7:     justify-content: space-between;
+8: }
 
 Backtrace:
-src/styles/scss/Header.scss:4
+src/styles/scss/Header.scss:3
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -67,4 +66,4 @@ src/styles/scss/Header.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$body\".\A         on line 4 of src/styles/scss/Header.scss\A \A 1: #header {\A 2: \A 3:     padding: 1.5em;\A 4:     font-family: $body;\A 5:     color: $main-white;\A 6: \A 7: }\A 8: \A 9: "; }
+  content: "Error: Undefined variable: \"$main-white\".\A         on line 3 of src/styles/scss/Header.scss\A \A 1: #header {    \A 2:     padding: 1em;\A 3:     color: $main-white;\A 4:     height: 10vh;\A 5:     display: flex;\A 6:     flex-direction: row;\A 7:     justify-content: space-between;\A 8: }"; }

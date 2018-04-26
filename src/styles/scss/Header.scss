@@ -1,17 +1,39 @@
-#header {
-
-    padding: 1.5em;
-    font-family: $body;
+#header {    
+    padding: 1em;
     color: $main-white;
-
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
-.btn {
-    float: right;
-    border: 3px solid $main-white;
-    padding: 0.5em;
-    border-radius: 5px;
-    cursor: pointer;   
+#menu { 
+    font-size: 1.5em;
+    color: $main-white;
+    position: relative;
+    left: .9em;
+    border: none;
+    cursor: pointer;  
+    display: flex;
+    align-items: center;
+
 
 }
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#z-logo {
+    font-size: 2em;
+    font-family: 'Playfair Display', sans-serif;
+ 
+}
+
+#moon {
+    font-size: 1.5em;
+
+}
+
