@@ -8,3 +8,15 @@
 .container {
     flex-direction: column;
 }
+
+img {
+    height: inherit;
+    width: inherit;
+}
+
+#more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
