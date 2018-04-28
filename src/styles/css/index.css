@@ -351,6 +351,35 @@ body {
 #moon {
   font-size: 1.5em; }
 
+#mobile-drop-down {
+  border-radius: 3px;
+  z-index: 99;
+  height: 500px;
+  width: 100vw;
+  display: none;
+  border: 5px solid green;
+  background-color: #7797A2;
+  font-family: "Open Sans", sans-serif; }
+  #mobile-drop-down ul {
+    width: auto;
+    margin-top: 6em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    #mobile-drop-down ul li {
+      display: block;
+      margin: 1.5em auto;
+      font-size: 1.5em;
+      border: 3px solid blue; }
+
+#close-btn {
+  border: 5px solid goldenrod;
+  color: #fdfdfd;
+  float: right;
+  font-size: 1.4em;
+  cursor: pointer; }
+
 #splash {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 100%), url("../../assets/splash.jpg");
   -webkit-clip-path: circle(90.7% at 50% 5%);
