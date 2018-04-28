@@ -19,6 +19,11 @@ html {
 body {
   margin: 0; }
 
+/*Remove default list display */
+ul, ol {
+  padding: 0;
+  margin: 0; }
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.

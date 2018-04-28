@@ -4,10 +4,7 @@ import React, {Component} from 'react';
 class Header extends Component {
     constructor(){
         super();
-        this.state = {
-            openMenu: false
 
-        }
         this.handleMenuClick = this.handleMenuClick.bind(this);
         this.handleClose = this.handleClose.bind(this);
     }
@@ -17,9 +14,9 @@ class Header extends Component {
         const actualMenu = document.getElementById('mobile-drop-down');
         const logo = document.getElementById('logo');
         if(actualMenu.style.display === 'none'){
-            actualMenu.style.display = 'block';
             logo.style.display = 'none';
             hamburger.style.display = 'none';
+            actualMenu.style.display = 'block';
         }
         else {
             actualMenu.style.display = 'none'
@@ -37,7 +34,6 @@ class Header extends Component {
         actualMenu.style.display = 'none';
         logo.style.display = 'flex';
         hamburger.style.display = 'flex';
-
         
     }
 
