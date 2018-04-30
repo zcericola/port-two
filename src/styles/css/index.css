@@ -365,7 +365,6 @@ body {
   width: 100vw;
   display: block;
   margin: 0 auto;
-  border: 5px solid green;
   background-color: #7797A2;
   font-family: "Open Sans", sans-serif; }
   #mobile-drop-down ul {
@@ -374,11 +373,10 @@ body {
     text-align: center; }
     #mobile-drop-down ul li {
       font-size: 1.5em;
-      border: 3px solid blue;
       margin: 2em auto; }
 
 #close-btn {
-  border: 5px solid goldenrod;
+  border: none;
   color: #fdfdfd;
   float: right;
   font-size: 1.4em;

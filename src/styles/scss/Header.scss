@@ -47,7 +47,6 @@
     width: 100vw;
     display: block;
     margin: 0 auto;
-    border: 5px solid green;
     background-color: $lt-blue;
     font-family: $body;
 
@@ -59,7 +58,6 @@
 
         li {   
             font-size: 1.5em;  
-            border: 3px solid blue; 
             margin: 2em auto;  
         }
     }
@@ -67,7 +65,7 @@
 }
 
 #close-btn {
-    border: 5px solid goldenrod;
+    border: none;
     color: $main-white;
     float: right;
     font-size: 1.4em;
