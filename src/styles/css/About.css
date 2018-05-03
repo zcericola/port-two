@@ -7,9 +7,9 @@ Error: Undefined variable: "$body".
 3:     font-family: $body;
 4:     margin: 2em 0;
 5:   
-6:       
-7: }
-8: 
+6:   
+7:       
+8: }
 
 Backtrace:
 src/styles/scss/About.scss:3
@@ -66,4 +66,4 @@ src/styles/scss/About.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$body\".\A         on line 3 of src/styles/scss/About.scss\A \A 1: #about {\A 2:     height: auto;\A 3:     font-family: $body;\A 4:     margin: 2em 0;\A 5:   \A 6:       \A 7: }\A 8: "; }
+  content: "Error: Undefined variable: \"$body\".\A         on line 3 of src/styles/scss/About.scss\A \A 1: #about {\A 2:     height: auto;\A 3:     font-family: $body;\A 4:     margin: 2em 0;\A 5:   \A 6:   \A 7:       \A 8: }"; }

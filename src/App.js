@@ -3,6 +3,7 @@ import Splash from './components/Splash/Splash';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 
 class App extends Component { 
@@ -14,8 +15,8 @@ class App extends Component {
         <About />
         <Projects />
         <Contact />
+        <Footer />
         
-
       </div>
     );
   }

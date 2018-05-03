@@ -12,6 +12,10 @@ clip-path: circle(95.7% at 50% 5%);
 #hero-container {
     margin-top: 2.5em;
     font-size: 1.5em;
+
+    #hero {
+        font-family: $heading;
+    }
 }
 
 @keyframes bounce {
@@ -21,11 +25,12 @@ clip-path: circle(95.7% at 50% 5%);
 }
 
 #down-arrow {
+
     position: absolute;
     text-align: center;
     margin-top: 3em;
     border: none;
-    font-size: 1.2em;
+    font-size: 1em;
     color: $pink;
     cursor: pointer;
     animation: bounce 4s infinite ease-in-out;
@@ -44,6 +49,9 @@ clip-path: circle(95.7% at 50% 5%);
     #splash {
         clip-path: none;
         
+    }
+    #down-arrow {
+        font-size: 1.2em;
     }
 }
 

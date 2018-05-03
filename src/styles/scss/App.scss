@@ -22,7 +22,6 @@ body {
 }
 
 .title {
-  font-family: $body;
   border-bottom: 5px dotted $pink;
   display: block;
   margin: 0 auto;
@@ -32,6 +31,7 @@ body {
 .container {
   color: $dk-blue;
   padding: 1em;
+  font-family: $body;
 
 }
 
