@@ -1,0 +1,46 @@
+#contact {
+    //can change height to auto later 
+    height: 50vh;
+    font-family: $body;
+}
+
+
+fieldset {
+    width: 20vw;
+    margin: 0 auto;
+    border: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-input {
+    margin: 1em auto;
+    border-radius: 3px;
+    background-color: $main-white;
+    height: 25px;
+    width: 300px;
+    outline-color: $alt-blue;
+}
+
+label {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+.btn {
+    padding: .5em 1em;
+    border: 2px solid $dk-blue;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: $dk-blue;
+    color: $main-white;
+    transition: ease-in-out .4s;
+}
+

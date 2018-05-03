@@ -493,5 +493,40 @@ img {
   .cards {
     flex-direction: row;
     flex-wrap: wrap; } }
+#contact {
+  height: 50vh;
+  font-family: "Open Sans", sans-serif; }
+
+fieldset {
+  width: 20vw;
+  margin: 0 auto;
+  border: none; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column; }
+
+.contact-input {
+  margin: 1em auto;
+  border-radius: 3px;
+  background-color: #fdfdfd;
+  height: 25px;
+  width: 300px;
+  outline-color: #078CA1; }
+
+label {
+  font-size: 1.2em;
+  text-align: left; }
+
+.btn {
+  padding: .5em 1em;
+  border: 2px solid #216578;
+  border-radius: 3px;
+  cursor: pointer; }
+
+.btn:hover {
+  background-color: #216578;
+  color: #fdfdfd;
+  transition: ease-in-out .4s; }
 
 /*# sourceMappingURL=index.css.map */
