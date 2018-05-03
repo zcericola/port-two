@@ -8,6 +8,7 @@ body {
   background-color: #fdfdfd; }
 
 .title {
+  font-family: "Open Sans", sans-serif;
   border-bottom: 5px dotted #F1CFC8;
   display: block;
   margin: 0 auto;

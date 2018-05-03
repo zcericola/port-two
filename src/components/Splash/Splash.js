@@ -13,8 +13,7 @@ class Splash extends Component {
         window.scroll({            
            left: 0,            
             top: 1022,
-            behavior: 'smooth'
-        
+            behavior: 'smooth'        
         });
 
     }

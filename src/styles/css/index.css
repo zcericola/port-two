@@ -312,6 +312,7 @@ body {
   background-color: #fdfdfd; }
 
 .title {
+  font-family: "Open Sans", sans-serif;
   border-bottom: 5px dotted #F1CFC8;
   display: block;
   margin: 0 auto;
@@ -360,7 +361,6 @@ body {
 #mobile-drop-down {
   border-radius: 3px;
   position: relative;
-  z-index: 999;
   height: 500px;
   width: 100vw;
   display: none;
