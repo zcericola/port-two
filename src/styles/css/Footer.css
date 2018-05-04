@@ -1,15 +1,15 @@
 /*
-Error: Undefined variable: "$pink".
+Error: Undefined variable: "$dk-blue".
         on line 5 of src/styles/scss/Footer.scss
 
 1: #footer {
 2:     width: auto;
 3:     bottom: 0;
 4:     display: block;
-5:     background-color: $pink;
-6:     height: 5vh;
-7:     font-size: 1.2em;
-8: 
+5:     background-color: $dk-blue;
+6:     color: $main-white;
+7:     height: 5vh;
+8:     font-size: 1.2em;
 9: }
 
 Backtrace:
@@ -67,4 +67,4 @@ src/styles/scss/Footer.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$pink\".\A         on line 5 of src/styles/scss/Footer.scss\A \A 1: #footer {\A 2:     width: auto;\A 3:     bottom: 0;\A 4:     display: block;\A 5:     background-color: $pink;\A 6:     height: 5vh;\A 7:     font-size: 1.2em;\A 8: \A 9: }"; }
+  content: "Error: Undefined variable: \"$dk-blue\".\A         on line 5 of src/styles/scss/Footer.scss\A \A 1: #footer {\A 2:     width: auto;\A 3:     bottom: 0;\A 4:     display: block;\A 5:     background-color: $dk-blue;\A 6:     color: $main-white;\A 7:     height: 5vh;\A 8:     font-size: 1.2em;\A 9: }"; }

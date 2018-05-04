@@ -1,9 +1,15 @@
 #contact {
     //can change height to auto later 
-    height: 50vh;
+    height: 60vh;
     font-family: $body;
     //padding-bottom needed to keep the footer down
-    padding-bottom: 25vh;
+    padding: 4em 2em 25vh 2em;
+    background-color: $pink;
+    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+}
+
+#contact-title {
+    border-bottom: 5px dotted $dk-blue;
 }
 
 
@@ -49,6 +55,15 @@ label {
 @media screen and (min-width: 550px){
     .contact-input {
         width: 350px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #contact-title {
+        margin-top: 6em;
+    }
+    .sub-title {
+        font-size: 1.5em;
     }
 }
 

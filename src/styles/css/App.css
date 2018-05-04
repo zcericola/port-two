@@ -10,7 +10,7 @@ body {
 .title {
   border-bottom: 5px dotted #F1CFC8;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 2em auto;
   width: 40%; }
 
 .container {
