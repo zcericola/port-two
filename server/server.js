@@ -37,12 +37,13 @@ const mailOptions = {
 
 
 //send mail with transport object
-transporter.sendMail(mailOptions, function(error, info){
-    if(error){
-        return console.log(error);
-    }
-    console.log('Message sent: ' + info.response);
-})
+//keep commented until ready to test -- sends automatically at the moment
+// transporter.sendMail(mailOptions, function(error, info){
+//     if(error){
+//         return console.log(error);
+//     }
+//     console.log('Message sent: ' + info.response);
+// })
 
 
 //contact form endpoint

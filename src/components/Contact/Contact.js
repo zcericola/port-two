@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import axios from 'axios';
 
 class Contact extends Component {
     constructor(){
@@ -9,14 +10,12 @@ class Contact extends Component {
             email: '',
             message: ''
         }
-        this.handleChange = this.handleChange.bind(this);
+      
         this.handleClick = this.handleClick.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleChange(e){
-        
-
-    }
+ 
 
     handleClick(){
         window.scroll({
@@ -28,20 +27,31 @@ class Contact extends Component {
 
     }
 
+    handleSubmit(){
+        const {name, email, message} = this.state;
+        axios.post('/contact', {name, email, message}).then( (response) => {
+            //do something with the response
+            
+        })
+
+    }
+
     render(){
+        
+
     return(<div className = 'container' id = 'contact'>
     <h1 className = 'title' id = 'contact-title'>Contact</h1>
     <h3 className = 'sub-title'>If you want to get in touch with me please shoot me an email with the form below.</h3>
     <form method = 'post'>
         <fieldset className = 'contact-form'>
         <label>Name: </label>
-            <input className = 'contact-input' type=  'text' onChange = {(e) => {this.handleChange(e.target.value)}}/> 
+            <input className = 'contact-input' type=  'text' onChange = {(e) => {this.setState({name: e.target.value})}}/> 
         <label>Email: </label>           
-            <input className = 'contact-input' type = 'email' onChange = {(e) => {this.handleChange(e.target.value)}}/>   
+            <input className = 'contact-input' type = 'email' onChange = {(e) => {this.setState({email: e.target.value})}}/>   
         <label>Message: </label>    
-            <input className = 'contact-input' type = 'text' onChange = {(e) => {this.handleChange(e.target.value)}}/>            
+            <input className = 'contact-input' type = 'text' onChange = {(e) => {this.setState({message: e.target.value})}}/>            
         </fieldset>
-        <span className = 'btn'>Send</span>
+        <span className = 'btn' onClick = {() => {this.handleSubmit()}}>Send</span>
     </form>   
     <i className="fa fa-arrow-circle-up" aria-hidden="true" id = 'scroll-top' onClick = {() => {this.handleClick()}}></i> 
     </div>);
