@@ -32,7 +32,11 @@ fieldset {
     height: 25px;
     width: 250px;
     outline-color: $alt-blue;
+
+  
+
 }
+
 
 label {
     font-size: 1.2em;
@@ -52,9 +56,20 @@ label {
     transition: ease-in-out .4s;
 }
 
+#swal2-title, #swal2-content {
+    font-family: $body;
+}
+
+.swal2-confirm{
+    color: $main-white;
+    font-family: $body;
+}
+
+
+
 #scroll-top {   
     float: right;
-    margin-top: 3em;
+    margin-top: 2em;
     font-size: 2em;
     cursor: pointer;
     animation: bounce 4s infinite ease-in-out;   

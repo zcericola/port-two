@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 class Contact extends Component {
     constructor(){
@@ -30,8 +31,17 @@ class Contact extends Component {
     handleSubmit(){
         const {name, email, message} = this.state;
         axios.post('/contact', {name, email, message}).then( (response) => {
-            //do something with the response
+            document.querySelector('form').reset();
+            Swal({
+                type: 'success',
+                title: 'Thanks for reaching out!',
+                text: 'I\'ll be in touch soon.', 
+                background: '#fdfdfd',
+                confirmButtonColor: '#216578',
+                allowEnterKey: true,
             
+                           
+              })
         })
 
     }
@@ -49,7 +59,7 @@ class Contact extends Component {
         <label>Email: </label>           
             <input className = 'contact-input' type = 'email' onChange = {(e) => {this.setState({email: e.target.value})}}/>   
         <label>Message: </label>    
-            <input className = 'contact-input' type = 'text' onChange = {(e) => {this.setState({message: e.target.value})}}/>            
+            <textarea className = 'contact-input' type = 'text' rows = '10' onChange = {(e) => {this.setState({message: e.target.value})}}/>            
         </fieldset>
         <span className = 'btn' onClick = {() => {this.handleSubmit()}}>Send</span>
     </form>   
