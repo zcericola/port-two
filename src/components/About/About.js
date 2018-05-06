@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class About extends Component {
     render(){
         return(<div className = 'container' id = 'about'>
-        <h1 className = 'title'>About</h1>
+        <h1 className = 'title' id = 'about-start'>About</h1>
         <div className = 'cards'>
         <div className = 'card'>        
         <i className="fas fa-map-marker"></i>

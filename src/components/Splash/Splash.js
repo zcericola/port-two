@@ -10,10 +10,10 @@ class Splash extends Component {
     }
 
     pullDown(){
-        window.scroll({            
-           left: 0,            
-            top: 1022,
-            behavior: 'smooth'        
+        window.scroll({
+            top: 880,            
+            behavior: 'smooth',
+                  
         });
 
     }

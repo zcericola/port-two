@@ -48,6 +48,7 @@
     margin: 0 auto;
     background-color: $lt-blue;
     font-family: $body;
+    
 
 
  ul {
@@ -57,10 +58,22 @@
 
         li {   
             font-size: 1.5em;  
-            margin: 2em auto;  
+            margin: 2em auto;
+            width: 20vw;
+            
         }
     }
     
+}
+
+#mobile-drop-down:focus {
+    transition: height 1000ms ease-in;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 
 #close-btn {

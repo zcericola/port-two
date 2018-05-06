@@ -17,6 +17,8 @@ class Header extends Component {
             logo.style.display = 'none';
             hamburger.style.display = 'none';
             actualMenu.style.display = 'block';
+            
+            
         }
         else {
             actualMenu.style.display = 'none'
@@ -43,13 +45,13 @@ class Header extends Component {
         <span id = 'z-logo'>Z</span>
         <i className="far fa-moon" id = 'moon'></i>
         </div>
-        <i className="fas fa-bars" id = 'menu' aria-hidden= 'true' onClick = {() => this.handleMenuClick()}></i>
+        <i className="fas fa-bars" id = 'menu' aria-hidden= 'false' onClick = {() => this.handleMenuClick()}></i>
         <div id = 'mobile-drop-down'>
         <i className="fas fa-times" id = 'close-btn' onClick = {() => this.handleClose()}></i>
         <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <a href = '#about'><li>About</li></a>
+            <a href = '#projects'><li>Projects</li></a>
+            <a href ='#projects'><li>Contact</li></a>
         </ul>
         </div>
         </div>
