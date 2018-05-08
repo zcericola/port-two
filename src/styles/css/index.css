@@ -526,7 +526,7 @@ a {
 .container {
   flex-direction: column; }
 
-img {
+.project-images {
   height: inherit;
   width: inherit; }
 
@@ -535,8 +535,10 @@ img {
   align-items: center;
   justify-content: center; }
 
-.card span {
-  font-size: 2em; }
+.card {
+  cursor: pointer; }
+  .card span {
+    font-size: 2em; }
 
 @media screen and (min-width: 768px) {
   .cards {

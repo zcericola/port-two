@@ -9,10 +9,11 @@
     flex-direction: column;
 }
 
-img {
+.project-images {
     height: inherit;
     width: inherit;
 }
+
 
 #more {
     display: flex;
@@ -21,10 +22,23 @@ img {
 }
 
 .card {
-    span {
+    cursor:pointer;
+        span {
         font-size: 2em;
     }
 }
+
+//Hoverable div that explains the project (not working currently)
+// .hover-desc {
+//     display: none;
+//     z-index: 99;   
+//     position: relative;
+//     height: inherit;
+//     width: inherit;
+//     background: linear-gradient(to bottom, rgba(0,0,0,.6) 0%,rgba(0,0,0,.6) 100%);
+
+// }
+
 
 @media screen and (min-width: 768px){
     .cards {
