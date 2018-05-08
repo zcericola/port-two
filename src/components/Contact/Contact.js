@@ -59,11 +59,11 @@ class Contact extends Component {
         <label>Email: </label>           
             <input className = 'contact-input' type = 'email' onChange = {(e) => {this.setState({email: e.target.value})}}/>   
         <label>Message: </label>    
-            <textarea className = 'contact-input' type = 'text' rows = '10' onChange = {(e) => {this.setState({message: e.target.value})}}/>            
+            <textarea type = 'text' rows="4" onChange = {(e) => {this.setState({message: e.target.value})}}/>          
         </fieldset>
         <span className = 'btn' onClick = {() => {this.handleSubmit()}}>Send</span>
     </form>   
-    <i className="fa fa-arrow-circle-up" aria-hidden="true" id = 'scroll-top' onClick = {() => {this.handleClick()}}></i> 
+    <i className="fa fa-arrow-circle-up" aria-hidden="false" id = 'scroll-top' onClick = {() => {this.handleClick()}}></i> 
     </div>);
     }
 }

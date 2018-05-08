@@ -1,19 +1,21 @@
 /*
 Error: Undefined variable: "$body".
-        on line 4 of src/styles/scss/Contact.scss
+        on line 13 of src/styles/scss/Contact.scss
 
-1: #contact {
-2:     //can change height to auto later 
-3:     height: auto;
-4:     font-family: $body;
-5:     //padding-bottom needed to keep the footer down
-6:     padding: 4em 2em 25vh 2em;
-7:     background-color: $pink;
-8:     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
-9: }
+8: }
+9: 
+10: #contact {
+11:     //can change height to auto later 
+12:     height: auto;
+13:     font-family: $body;
+14:     //padding-bottom needed to keep the footer down
+15:     padding: 4em 2em 25vh 2em;
+16:     background-color: $pink;
+17:     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+18: }
 
 Backtrace:
-src/styles/scss/Contact.scss:4
+src/styles/scss/Contact.scss:13
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -67,4 +69,4 @@ src/styles/scss/Contact.scss:4
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$body\".\A         on line 4 of src/styles/scss/Contact.scss\A \A 1: #contact {\A 2:     //can change height to auto later \A 3:     height: auto;\A 4:     font-family: $body;\A 5:     //padding-bottom needed to keep the footer down\A 6:     padding: 4em 2em 25vh 2em;\A 7:     background-color: $pink;\A 8:     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);\A 9: }"; }
+  content: "Error: Undefined variable: \"$body\".\A         on line 13 of src/styles/scss/Contact.scss\A \A 8: }\A 9: \A 10: #contact {\A 11:     //can change height to auto later \A 12:     height: auto;\A 13:     font-family: $body;\A 14:     //padding-bottom needed to keep the footer down\A 15:     padding: 4em 2em 25vh 2em;\A 16:     background-color: $pink;\A 17:     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);\A 18: }"; }

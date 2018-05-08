@@ -1,3 +1,12 @@
+@mixin text-field-style {
+    margin: 1em auto;
+    border-radius: 3px;
+    width: 225px;
+    background-color: $main-white;
+    outline-color: $alt-blue; 
+
+}
+
 #contact {
     //can change height to auto later 
     height: auto;
@@ -26,15 +35,14 @@ fieldset {
 }
 
 .contact-input {
-    margin: 1em auto;
-    border-radius: 3px;
-    background-color: $main-white;
+    @include text-field-style;
     height: 25px;
-    width: 250px;
-    outline-color: $alt-blue;
+    
 
-  
+}
 
+textarea {   
+   @include text-field-style;
 }
 
 
@@ -44,6 +52,7 @@ label {
 }
 
 .btn {
+    margin-top: 1em;
     padding: .5em 1em;
     border: 2px solid $dk-blue;
     border-radius: 3px;
@@ -64,6 +73,8 @@ label {
     color: $main-white;
     font-family: $body;
 }
+
+
 
 
 
@@ -93,7 +104,10 @@ label {
 @media screen and (min-width: 550px){
 
     .contact-input {
-        width: 350px;
+        width: 300px;
+    }
+    textarea {
+        width: 300px;
     }
 }
 

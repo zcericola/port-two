@@ -564,9 +564,16 @@ fieldset {
 .contact-input {
   margin: 1em auto;
   border-radius: 3px;
+  width: 225px;
   background-color: #fdfdfd;
-  height: 25px;
-  width: 250px;
+  outline-color: #078CA1;
+  height: 25px; }
+
+textarea {
+  margin: 1em auto;
+  border-radius: 3px;
+  width: 225px;
+  background-color: #fdfdfd;
   outline-color: #078CA1; }
 
 label {
@@ -574,6 +581,7 @@ label {
   text-align: left; }
 
 .btn {
+  margin-top: 1em;
   padding: .5em 1em;
   border: 2px solid #216578;
   border-radius: 3px;
@@ -606,7 +614,10 @@ label {
     margin-top: 1em; } }
 @media screen and (min-width: 550px) {
   .contact-input {
-    width: 350px; } }
+    width: 300px; }
+
+  textarea {
+    width: 300px; } }
 @media screen and (min-width: 768px) {
   #contact-title {
     margin-top: 4em; }
