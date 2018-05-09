@@ -542,11 +542,13 @@ a {
     font-size: 2em; }
 
 .hover-desc {
+  box-sizing: border-box;
+  padding: 0 1em;
   color: #fdfdfd;
   position: absolute;
-  line-height: 1.5em;
-  top: 15px;
-  left: 15px;
+  line-height: 1.3em;
+  top: 16px;
+  left: 16px;
   height: inherit;
   width: inherit;
   z-index: 2;
@@ -560,11 +562,20 @@ a {
   transition: opacity 0.8s ease-in-out;
   background: linear-gradient(to bottom, rgba(33, 101, 120, 0.9) 0%, rgba(33, 101, 120, 0.9) 100%); }
 
+.hover-desc > p {
+  text-align: left;
+  font-size: .9em; }
+
 .card:hover > .hover-desc {
   opacity: 1; }
 
 .github-link a {
-  font-size: .7em; }
+  font-size: .7em;
+  color: #F1CFC8; }
+
+.tab2 {
+  display: inline-block;
+  width: .5em; }
 
 @media screen and (min-width: 768px) {
   .cards {
@@ -629,7 +640,7 @@ label {
 
 #scroll-top {
   float: right;
-  margin-top: 2em;
+  margin-top: 1em;
   font-size: 2em;
   cursor: pointer;
   animation: bounce 4s infinite ease-in-out; }

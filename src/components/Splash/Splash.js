@@ -1,17 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import Header from '../Header/Header';
 import zenscroll from 'zenscroll';
 
 
-class Splash extends Component {
-    constructor(){
-        super();
-
-    }
-
-   
-
-    render(){
+const Splash = () => { 
         return(<div className = 'container' id = 'splash'>
            <Header />
            <div id = 'hero-container'>
@@ -21,7 +13,7 @@ class Splash extends Component {
            </div>
         
         </div>);
-    }
+    
 }
 
 export default Splash;
