@@ -8,15 +8,21 @@ class Header extends Component {
     this.handleClose = this.handleClose.bind(this);
   }
 
+  componentDidMount() {
+    const hamburger = document.getElementById("menu");
+    hamburger.focus();
+  }
+
   handleMenuClick() {
     const hamburger = document.getElementById("menu");
     const actualMenu = document.getElementById("mobile-drop-down");
     const logo = document.getElementById("logo");
-    if (actualMenu.style.display === "none") {
+
+    if (actualMenu.style.display !== "block") {
       logo.style.display = "none";
       hamburger.style.display = "none";
       actualMenu.style.display = "block";
-      actualMenu.style.visibility = "visible";
+   
     } else {
       actualMenu.style.display = "none";
       logo.style.display = "flex";
@@ -44,6 +50,7 @@ class Header extends Component {
           className="fas fa-bars"
           id="menu"
           aria-hidden="false"
+          autoFocus
           onClick={() => this.handleMenuClick()}
         />
         <div id="mobile-drop-down">
@@ -54,13 +61,13 @@ class Header extends Component {
           />
           <ul>
             <a href="#about" onClick={() => this.handleClose()}>
-              <li>About</li>
+              <li className = 'hover'>About</li>
             </a>
             <a href="#projects" onClick={() => this.handleClose()}>
-              <li>Projects</li>
+              <li className = 'hover'>Projects</li>
             </a>
             <a href="#contact" onClick={() => this.handleClose()}>
-              <li>Contact</li>
+              <li className = 'hover'>Contact</li>
             </a>
           </ul>
         </div>

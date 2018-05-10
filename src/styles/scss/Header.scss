@@ -1,3 +1,12 @@
+@keyframes dropIn {
+  0% {
+    -webkit-transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
 #header {
   padding: 1em;
   color: $main-white;
@@ -11,7 +20,6 @@
   position: relative;
   font-size: 2em;
   color: $main-white;
-  position: relative;
   left: 0.9em;
   border: none;
   cursor: pointer;
@@ -31,8 +39,16 @@
 
 #moon {
   font-size: 1.5em;
+  animation: dropIn 3s ease-in-out;
+  animation-iteration-count: 1;
+  color: $pink;
+  font-weight: bold;
 }
 
+.hover:hover {
+  color: $pink;
+  transition: ease-in-out .2s;
+}
 
 //when drop down is selected, logo and hamburger should be set to display: none
 #mobile-drop-down {
@@ -41,31 +57,26 @@
   height: 500px;
   width: 100vw;
   display: none;
-  visibility: hidden;
   margin: 0 auto;
   background-color: $lt-blue;
   font-family: $body;
-  -webkit-transition: visibility 1s ease-in-out;
-    -moz-transition: visibility 1s ease-in-out;
-    -o-transition: visibility 1s ease-in-out;
-    -ms-transition: visibility 1s ease-in-out;
-    transition: visibility 1s ease-in-out;
+  z-index: 99;
 
   ul {
     margin-top: 6em;
     list-style-type: none;
     text-align: center;
 
+    
+
     li {
       font-size: 1.5em;
       margin: 2em auto;
-      width: 20vw;
+      width: 30vw;
+      
     }
+    
   }
-}
-
-#mobile-drop-down:focus {
-  transition: height 1000ms ease-in;
 }
 
 a {
@@ -81,3 +92,16 @@ a {
   font-size: 2em;
   cursor: pointer;
 }
+
+@media screen and (min-width: 1000px){
+  #logo{
+    font-size: 1.6em;
+  }
+
+  #menu{
+    font-size: 2.2em;
+  }
+
+
+}
+
