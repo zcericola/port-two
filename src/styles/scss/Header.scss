@@ -1,88 +1,83 @@
-#header {    
-    padding: 1em;
-    color: $main-white;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+#header {
+  padding: 1em;
+  color: $main-white;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-
-#menu { 
-    position: relative;
-    font-size: 1.5em;
-    color: $main-white;
-    position: relative;
-    left: .9em;
-    border: none;
-    cursor: pointer;  
-    display: flex;
-    align-items: center;
-
-
+#menu {
+  position: relative;
+  font-size: 2em;
+  color: $main-white;
+  position: relative;
+  left: 0.9em;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 #logo {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 #z-logo {
-    font-size: 2em;
-    font-family: 'Playfair Display', sans-serif;
- 
+  font-size: 2.2em;
+  font-family: "Playfair Display", sans-serif;
 }
 
 #moon {
-    font-size: 1.5em;
-
+  font-size: 1.5em;
 }
+
 
 //when drop down is selected, logo and hamburger should be set to display: none
 #mobile-drop-down {
-    border-radius: 3px;
-    position: relative;
-    height: 500px;
-    width: 100vw;
-    display: none;
-    margin: 0 auto;
-    background-color: $lt-blue;
-    font-family: $body;
-    
+  border-radius: 3px;
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  display: none;
+  visibility: hidden;
+  margin: 0 auto;
+  background-color: $lt-blue;
+  font-family: $body;
+  -webkit-transition: visibility 1s ease-in-out;
+    -moz-transition: visibility 1s ease-in-out;
+    -o-transition: visibility 1s ease-in-out;
+    -ms-transition: visibility 1s ease-in-out;
+    transition: visibility 1s ease-in-out;
 
+  ul {
+    margin-top: 6em;
+    list-style-type: none;
+    text-align: center;
 
- ul {
-        margin-top: 6em;
-        list-style-type: none;
-        text-align: center;
-
-        li {   
-            font-size: 1.5em;  
-            margin: 2em auto;
-            width: 20vw;
-            
-        }
+    li {
+      font-size: 1.5em;
+      margin: 2em auto;
+      width: 20vw;
     }
-    
+  }
 }
 
 #mobile-drop-down:focus {
-    transition: height 1000ms ease-in;
+  transition: height 1000ms ease-in;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 #close-btn {
-    border: none;
-    color: $main-white;
-    float: right;
-    font-size: 1.4em;
-    cursor: pointer;
-    }
-
-
-
+  border: none;
+  color: $main-white;
+  float: right;
+  font-size: 2em;
+  cursor: pointer;
+}
