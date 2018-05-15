@@ -368,24 +368,29 @@ body {
 
 .hover:hover {
   color: #F1CFC8;
-  transition: ease-in-out .2s; }
+  transition: ease-in-out 0.2s; }
 
 #mobile-drop-down {
   border-radius: 3px;
   position: relative;
-  height: 500px;
-  width: 100vw;
+  height: 400px;
+  width: 80vw;
   display: none;
   margin: 0 auto;
-  background-color: #7797A2;
   font-family: "Open Sans", sans-serif;
-  z-index: 99; }
+  z-index: 99;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -o-transition: opacity 0.8s ease-in-out;
+  -ms-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+  background: linear-gradient(to bottom, rgba(33, 101, 120, 0.9) 0%, rgba(33, 101, 120, 0.3) 100%); }
   #mobile-drop-down ul {
     margin-top: 6em;
     list-style-type: none;
     text-align: center; }
     #mobile-drop-down ul li {
-      font-size: 1.5em;
+      font-size: 2em;
       margin: 2em auto;
       width: 30vw; }
 
@@ -400,6 +405,9 @@ a {
   float: right;
   font-size: 2em;
   cursor: pointer; }
+
+#close-btn:hover {
+  color: #F1CFC8; }
 
 @media screen and (min-width: 1000px) {
   #logo {
@@ -420,7 +428,10 @@ a {
   margin-top: 2.5em;
   font-size: 1.5em; }
   #hero-container #hero {
-    font-family: "Playfair Display", serif; }
+    font-family: "Playfair Display", serif;
+    visibility: visible; }
+  #hero-container #sub-hero {
+    visibility: visible; }
 
 @keyframes bounce {
   0%, 20%, 60%, 100% {

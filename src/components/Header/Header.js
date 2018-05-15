@@ -13,30 +13,40 @@ class Header extends Component {
     hamburger.focus();
   }
 
+  //opens hidden mneu
   handleMenuClick() {
     const hamburger = document.getElementById("menu");
     const actualMenu = document.getElementById("mobile-drop-down");
     const logo = document.getElementById("logo");
+    const hero = document.getElementById("hero");
+    const subHero = document.getElementById("sub-hero");
 
     if (actualMenu.style.display !== "block") {
       logo.style.display = "none";
       hamburger.style.display = "none";
       actualMenu.style.display = "block";
-   
+      hero.style.visibility = "hidden";
+      subHero.style.visibility = "hidden";
     } else {
-      actualMenu.style.display = "none";
+      actualMenu.style.display = "block";
       logo.style.display = "flex";
       hamburger.style.display = "flex";
     }
   }
-
+//closes the hidden menu
   handleClose() {
     const hamburger = document.getElementById("menu");
     const actualMenu = document.getElementById("mobile-drop-down");
+    const hero = document.getElementById("hero");
+    const subHero = document.getElementById("sub-hero");
     const logo = document.getElementById("logo");
+
     actualMenu.style.display = "none";
+    hamburger.style.visibility = "visible";
     logo.style.display = "flex";
     hamburger.style.display = "flex";
+    hero.style.visibility = "initial";
+    subHero.style.visibility = "initial";
   }
 
   render() {
@@ -61,13 +71,13 @@ class Header extends Component {
           />
           <ul>
             <a href="#about" onClick={() => this.handleClose()}>
-              <li className = 'hover'>About</li>
+              <li className="hover">About</li>
             </a>
             <a href="#projects" onClick={() => this.handleClose()}>
-              <li className = 'hover'>Projects</li>
+              <li className="hover">Projects</li>
             </a>
             <a href="#contact" onClick={() => this.handleClose()}>
-              <li className = 'hover'>Contact</li>
+              <li className="hover">Contact</li>
             </a>
           </ul>
         </div>

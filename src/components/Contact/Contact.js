@@ -45,8 +45,6 @@ class Contact extends Component {
   handleSubmit() {
     const { name, email, message } = this.state;
     const validated = this.handleFormValidation();
-    console.log(validated);
-
     validated
       ? axios.post("/contact", { name, email, message }).then(response => {
           document.querySelector("form").reset();

@@ -47,35 +47,37 @@
 
 .hover:hover {
   color: $pink;
-  transition: ease-in-out .2s;
+  transition: ease-in-out 0.2s;
 }
 
 //when drop down is selected, logo and hamburger should be set to display: none
 #mobile-drop-down {
   border-radius: 3px;
   position: relative;
-  height: 500px;
-  width: 100vw;
+  height: 400px;
+  width: 80vw;
   display: none;
   margin: 0 auto;
-  background-color: $lt-blue;
   font-family: $body;
   z-index: 99;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -o-transition: opacity 0.8s ease-in-out;
+  -ms-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+  background: linear-gradient(to bottom, rgba(33,101,120,.9) 0%,rgba(33,101,120,.3) 100%);
+
 
   ul {
     margin-top: 6em;
     list-style-type: none;
     text-align: center;
 
-    
-
     li {
-      font-size: 1.5em;
+      font-size: 2em;
       margin: 2em auto;
       width: 30vw;
-      
     }
-    
   }
 }
 
@@ -93,15 +95,16 @@ a {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1000px){
-  #logo{
+#close-btn:hover {
+  color: $pink;
+}
+
+@media screen and (min-width: 1000px) {
+  #logo {
     font-size: 1.6em;
   }
 
-  #menu{
+  #menu {
     font-size: 2.2em;
   }
-
-
 }
-
