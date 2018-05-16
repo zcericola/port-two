@@ -349,7 +349,8 @@ body {
   border: none;
   cursor: pointer;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  visibility: visible; }
 
 #logo {
   display: flex;
@@ -374,7 +375,7 @@ body {
   border-radius: 3px;
   position: relative;
   height: 400px;
-  width: 80vw;
+  width: 100vw;
   display: none;
   margin: 0 auto;
   font-family: "Open Sans", sans-serif;

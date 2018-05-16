@@ -33,7 +33,7 @@ class Header extends Component {
       hamburger.style.display = "flex";
     }
   }
-//closes the hidden menu
+  //closes the hidden menu
   handleClose() {
     const hamburger = document.getElementById("menu");
     const actualMenu = document.getElementById("mobile-drop-down");
@@ -41,10 +41,9 @@ class Header extends Component {
     const subHero = document.getElementById("sub-hero");
     const logo = document.getElementById("logo");
 
-    actualMenu.style.display = "none";
-    hamburger.style.visibility = "visible";
-    logo.style.display = "flex";
     hamburger.style.display = "flex";
+    actualMenu.style.display = "none";
+    logo.style.display = "flex";
     hero.style.visibility = "initial";
     subHero.style.visibility = "initial";
   }
