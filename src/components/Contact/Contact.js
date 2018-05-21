@@ -43,7 +43,7 @@ class Contact extends Component {
     if(!emailRegEx.test(email)){
       Swal({
         type: "error",
-        text: "Please enter a valid email address. Example: name@email.com.",
+        text: "Please enter a valid email address. Ex: name@email.com.",
         background: "#fdfdfd",
         confirmButtonColor: "#216578",
         allowEnterKey: true
