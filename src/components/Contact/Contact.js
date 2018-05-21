@@ -29,10 +29,21 @@ class Contact extends Component {
     let name = document.forms["contact-form"]["usrName"].value;
     let email = document.forms["contact-form"]["usrEmail"].value;
     let message = document.forms["contact-form"]["usrMessage"].value;
+    const emailRegEx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (name === "" || email === "" || message === "") {
       Swal({
         type: "error",
         text: "All fields are required. Please fill them out and try again.",
+        background: "#fdfdfd",
+        confirmButtonColor: "#216578",
+        allowEnterKey: true
+      });
+      return false;
+    }
+    if(!emailRegEx.test(email)){
+      Swal({
+        type: "error",
+        text: "Please enter a valid email address. Example: name@email.com.",
         background: "#fdfdfd",
         confirmButtonColor: "#216578",
         allowEnterKey: true

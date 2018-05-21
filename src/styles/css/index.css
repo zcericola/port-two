@@ -649,7 +649,7 @@ label {
 
 .btn {
   margin-top: 1em;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border: 2px solid #216578;
   border-radius: 3px;
   cursor: pointer; }
@@ -657,9 +657,10 @@ label {
 .btn:hover {
   background-color: #216578;
   color: #fdfdfd;
-  transition: ease-in-out .4s; }
+  transition: ease-in-out 0.4s; }
 
-#swal2-title, #swal2-content {
+#swal2-title,
+#swal2-content {
   font-family: "Open Sans", sans-serif; }
 
 .swal2-confirm {
@@ -667,9 +668,9 @@ label {
   font-family: "Open Sans", sans-serif; }
 
 #scroll-top {
-  float: right;
   margin-top: 1em;
-  font-size: 2em;
+  float: right;
+  font-size: 2.5em;
   cursor: pointer;
   animation: bounce 4s infinite ease-in-out; }
 
@@ -696,7 +697,10 @@ label {
     height: 60vh; }
 
   #contact-title {
-    margin-top: 4.5em; } }
+    margin-top: 4.5em; }
+
+  #scroll-top {
+    margin-top: 0; } }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   #contact {
     height: 40vh; } }

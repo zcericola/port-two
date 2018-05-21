@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$body".
-        on line 13 of src/styles/scss/Contact.scss
+        on line 12 of src/styles/scss/Contact.scss
 
-8: }
-9: 
-10: #contact {
-11:     //can change height to auto later 
-12:     height: auto;
-13:     font-family: $body;
-14:     //padding-bottom needed to keep the footer down
-15:     padding: 4em 2em 25vh 2em;
-16:     background-color: $pink;
-17:     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
-18: }
+7: }
+8: 
+9: #contact {
+10:   //can change height to auto later
+11:   height: auto;
+12:   font-family: $body;
+13:   //padding-bottom needed to keep the footer down
+14:   padding: 4em 2em 25vh 2em;
+15:   background-color: $pink;
+16:   clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+17: }
 
 Backtrace:
-src/styles/scss/Contact.scss:13
+src/styles/scss/Contact.scss:12
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -69,4 +69,4 @@ src/styles/scss/Contact.scss:13
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$body\".\A         on line 13 of src/styles/scss/Contact.scss\A \A 8: }\A 9: \A 10: #contact {\A 11:     //can change height to auto later \A 12:     height: auto;\A 13:     font-family: $body;\A 14:     //padding-bottom needed to keep the footer down\A 15:     padding: 4em 2em 25vh 2em;\A 16:     background-color: $pink;\A 17:     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);\A 18: }"; }
+  content: "Error: Undefined variable: \"$body\".\A         on line 12 of src/styles/scss/Contact.scss\A \A 7: }\A 8: \A 9: #contact {\A 10:   //can change height to auto later\A 11:   height: auto;\A 12:   font-family: $body;\A 13:   //padding-bottom needed to keep the footer down\A 14:   padding: 4em 2em 25vh 2em;\A 15:   background-color: $pink;\A 16:   clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);\A 17: }"; }
