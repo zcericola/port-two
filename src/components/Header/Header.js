@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+const resume = require('../../assets/cericola_resume.pdf');
 
 class Header extends Component {
   constructor() {
@@ -74,6 +75,9 @@ class Header extends Component {
             </a>
             <a href="#projects" onClick={() => this.handleClose()}>
               <li className="hover">Projects</li>
+            </a>
+            <a href={resume} target = '_blank' onClick={() => this.handleClose()}>
+              <li className="hover">Résumé</li>
             </a>
             <a href="#contact" onClick={() => this.handleClose()}>
               <li className="hover">Contact</li>

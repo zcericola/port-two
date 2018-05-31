@@ -387,11 +387,11 @@ body {
   transition: opacity 0.8s ease-in-out;
   background: linear-gradient(to bottom, rgba(33, 101, 120, 0.9) 0%, rgba(33, 101, 120, 0.3) 100%); }
   #mobile-drop-down ul {
-    margin-top: 6em;
+    margin-top: 2em;
     list-style-type: none;
     text-align: center; }
     #mobile-drop-down ul li {
-      font-size: 2em;
+      font-size: 1.8em;
       margin: 2em auto;
       width: 30vw; }
 
