@@ -463,6 +463,9 @@ a {
   #down-arrow {
     display: block;
     font-size: 1.2em; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 812px) and (orientation: landscape) {
+  #down-arrow {
+    display: none; } }
 @media screen and (min-width: 768px) {
   #hero-container {
     font-size: 2.2em; } }
@@ -704,6 +707,9 @@ label {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   #contact {
     height: 40vh; } }
+@media only screen and (min-device-width: 414px) and (max-device-width: 812px) and (orientation: landscape) {
+  #contact {
+    height: 100%; } }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) and (orientation: landscape) {
   #contact {
     height: 100vh; } }
