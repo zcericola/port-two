@@ -1,8 +1,9 @@
+require('dotenv').config();
 const express = require('express');
 const { json } = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
-require('dotenv').config();
+
 
 const port = 3002;
 
@@ -21,19 +22,23 @@ app.use(json());
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
+    // host: 'smtp.gmail.com',
+    // port: 465,
+    // secure: true,
     auth: {
-        user: process.env.user,
-        pass: process.env.pass
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD
+        
     }
 })
 
-
+console.log(process.env.EMAIL);
 //contact form endpoint
 app.post('/contact', (req,res, next) => {
     const {name, email, message} = req.body;
     //configures the email body
     const mailOptions = {
-        to: config.user,
+        to: process.env.EMAIL,
         from: email, 
         subject: 'Contact Form Submission from Portfolio Site',
         text: `You have received a message from ${name}. You can respond to them at ${email}:\n ${message} `, //plain-text body
