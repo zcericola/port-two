@@ -77,7 +77,7 @@ class Contact extends Component {
         <h1 className="title" id="contact-title">
           Contact
         </h1>
-        <h3 className="sub-title">
+        {/* <h3 className="sub-title">
           If you want to get in touch with me please shoot me an email with the
           form below.
         </h3>
@@ -126,7 +126,11 @@ class Contact extends Component {
           >
             Send
           </span>
-        </form>
+        </form> */}
+<a href = 'https://www.github.com/zcericola' target= '_blank'><h3 className = 'sub-title'>Github</h3></a>
+<a href = 'https://www.linkedin.com/in/zcericola/' target= '_blank'><h3 className = 'sub-title'>LinkedIn</h3></a>
+<a href = 'mailto:zcericola@gmail.com'> <h3 className = 'sub-title'>Email</h3></a>
+
         <i
           className="fa fa-arrow-circle-up"
           aria-hidden="false"

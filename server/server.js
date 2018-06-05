@@ -3,6 +3,7 @@ const express = require('express');
 const { json } = require('body-parser');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
+const xoauth2 = require('xoauth2');
 
 
 const port = 3002;
@@ -20,21 +21,25 @@ app.use(cors());
 app.use(json());
 
 
+
+
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
     host: 'smtp.gmail.com',
     port: 465,
-    secure: false,
-    requireTLS: true,
-    debug: true,
     auth: {
+        xoauth2: {
             user: process.env.EMAIL,
-            pass: process.env.PASSWORD
+            pass: process.env.PASSWORD,
+            clientId:process.env.CLIENT_ID,
+            clientSecret: process.env.CLIENT_SECRET,
+            refreshToken: process.env.REFRESH_TOKEN
+
+        }
         
     }
 })
 
-console.log(process.env.EMAIL);
+
 //contact form endpoint
 app.post('/contact', (req,res, next) => {
     const {name, email, message} = req.body;
