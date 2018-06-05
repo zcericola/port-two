@@ -22,9 +22,10 @@ app.use(json());
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
-    // host: 'smtp.gmail.com',
-    // port: 465,
-    // secure: true,
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: false,
+    requireTLS: true,
     auth: {
             user: process.env.EMAIL,
             pass: process.env.PASSWORD
