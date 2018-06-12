@@ -1,7 +1,12 @@
+const path = require('path')
 require('dotenv').config();
 const express = require('express');
+const logger = require('morgan');
+const mg = require('nodemailer-mailgun-transport');
 const { json } = require('body-parser');
 const cors = require('cors');
+const nconf = require('nconf');
+const auth = require('../config.json');
 const nodemailer = require('nodemailer');
 const xoauth2 = require('xoauth2');
 
@@ -12,7 +17,10 @@ const port = 3002;
 const app = express();
 
 //express static build
+app.use(express.static(__dirname + '/assets'));
 app.use(express.static(`${__dirname}/../build`));
+app.use(express.static(__dirname + '/assets'));
+
 
 //Middlewares
 //cors
@@ -23,21 +31,7 @@ app.use(json());
 
 
 
-const transporter = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    auth: {
-        xoauth2: {
-            user: process.env.EMAIL,
-            pass: process.env.PASSWORD,
-            clientId:process.env.CLIENT_ID,
-            clientSecret: process.env.CLIENT_SECRET,
-            refreshToken: process.env.REFRESH_TOKEN
-
-        }
-        
-    }
-})
+const transporter = nodemailer.createTransport(mg(auth));
 
 
 //contact form endpoint
@@ -67,8 +61,7 @@ res.status(200).json('Email was sent.');
 
 })
 
-//path
-// const path = require('path')
+
 
 app.listen(port, () => {
     console.log(`Avast matey, ye scurvy dog, we be listenin' on port ${port}`);

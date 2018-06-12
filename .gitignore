@@ -18,6 +18,7 @@
 .env.production.local
 .sass-cache/
 /config.js
+config.json
 .env
 
 npm-debug.log*

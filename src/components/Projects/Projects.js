@@ -12,12 +12,12 @@ const Projects = () => {
         <img className = 'project-images' src = {artifact} alt = 'Artifact Fine Goods'/>
         <div className = 'hover-desc'>
         <h2>Artifact Fine Goods</h2>
-        <p><span className = 'tab2'></span>A fully functioning fictional e-commerce website built in a 2 week sprint. Allows a customer browse products, add them to the shopping cart, checkout, and edit profile details. Tech used: React, Redux, Auth0, Stripe, SweetAlert2, PostgreSQL, Express, Node, and Sass.</p>
+        <p><span className = 'tab2'></span>A fully functioning fictional e-commerce website built in a 2 week sprint. Allows a customer to browse products, add them to the shopping cart, checkout, and edit profile details. Tech used: React, Redux, Auth0, Stripe, SweetAlert2, PostgreSQL, Express, Node, and Sass.</p>
         <span className = 'github-link'><a href = 'https://github.com/zcericola/artifact-project' target = '#'>Github <i className="fa fa-code" aria-hidden="true"></i></a></span>        
         </div>
         </div>
         <div className = 'card'><img className = 'project-images' src = {casa} alt = 'Casa Connection'/>
-        <div className = 'hover-desc'><h2>Casa Connection</h2><p><span className = 'tab2'></span>A property management app allowing landlords to track properties, tenants, contractors and pending repair requests. This was built with a team of 3 other developers over 2 weeks. I was responsible for building the backend, data visualization, and overall project management. Tech used: React, Redux, Express, Node, Auth0, PostgreSQL, Chart.js, Sass, and Material-UI.</p>
+        <div className = 'hover-desc'><h2>Casa Connection</h2><p><span className = 'tab2'></span>A property management app allowing landlords to track properties, tenants, contractors and pending repair requests. This was built with a team of 3 other developers over 2 weeks. I was responsible for building the backend logic, data visualization with Chart.js, and overall project management. Tech used: React, Redux, Express, Node, Auth0, PostgreSQL, Chart.js, Sass, and Material-UI.</p>
         <span className = 'github-link'><a href = 'https://github.com/rental-management/Casa-Connection' target = '#'>Github <i className="fa fa-code" aria-hidden="true"></i></a></span></div>
         </div>
         <div className = 'card'><img className = 'project-images' src = {book} alt = 'Book Spy'/>
