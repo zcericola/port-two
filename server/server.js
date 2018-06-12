@@ -11,7 +11,7 @@ const nodemailer = require('nodemailer');
 const xoauth2 = require('xoauth2');
 
 
-const port = 3002;
+const port = 3010;
 
 //initialize express
 const app = express();
