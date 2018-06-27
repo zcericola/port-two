@@ -17,7 +17,7 @@ const Projects = () => {
         </div>
         </div>
         <div className = 'card'><img className = 'project-images' src = {casa} alt = 'Casa Connection'/>
-        <div className = 'hover-desc'><h2>Casa Connection</h2><p><span className = 'tab2'></span>A property management app allowing landlords to track properties, tenants, contractors and pending repair requests. This was built with a team of 3 other developers over 2 weeks. I was responsible for building the backend logic, data visualization with Chart.js, and overall project management. Tech used: React, Redux, Express, Node, Auth0, PostgreSQL, Chart.js, Sass, and Material-UI.</p>
+        <div className = 'hover-desc'><h2>Casa Connection</h2><p><span className = 'tab2'></span>A property management app allowing landlords to track properties, tenants, contractors and maintenance. This was built with a team of 3 other developers over 2 weeks. I was responsible for building the backend logic, data visualization with Chart.js, and overall project management. Tech used: React, Redux, Express, Node, Auth0, PostgreSQL, Chart.js, Sass, and Material-UI.</p>
         <span className = 'github-link'><a href = 'https://github.com/rental-management/Casa-Connection' target = '#'>Github <i className="fa fa-code" aria-hidden="true"></i></a></span></div>
         </div>
         <div className = 'card'><img className = 'project-images' src = {book} alt = 'Book Spy'/>
