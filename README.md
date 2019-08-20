@@ -1,6 +1,6 @@
 # Zac's Web Developer Portfolio
 
-## Link here: [zcericola.com](http://www.zcericola.com)
+## Update: This version is out of date and is not the same as what is currently hosted at [zcericola.com](http://www.zcericola.com)
 
 This is my fourth or fifth iteration of my portfolio in the past year or so, as I've gotten more adept at web development and using various tools, I've updated. What once started out as a just and HMTL and a CSS page, is now built with React. I didn't have to use a library for this, considering it's just a simple portfolio but, I chose to because I enjoy the composable nature of React, as well as the organizational structure. 
 
